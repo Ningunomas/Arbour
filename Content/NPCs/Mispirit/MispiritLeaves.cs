@@ -10,6 +10,8 @@ namespace Arbour.Content.NPCs.Mispirit;
 
 internal class MispiritLeaves : ModProjectile
 {
+    public override bool IsLoadingEnabled(Mod mod) => false;
+
     const float WaveMod = 0.02f;
 
     private NPC Owner => Main.npc[(int)Projectile.ai[0]];

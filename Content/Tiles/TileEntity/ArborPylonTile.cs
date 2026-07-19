@@ -1,4 +1,5 @@
 ﻿using Arbour;
+using Arbour.Content.Items.Placeable;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using ReLogic.Content;
@@ -8,16 +9,14 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.Map;
-using Terraria.ModLoader.Default;
 using Terraria.ModLoader;
+using Terraria.ModLoader.Default;
 using Terraria.ObjectData;
-using Arbour.Content.Items.Placeable;
 
 namespace Arbour.Content.Tiles.TileEntity
 {
 	internal class ArborPylonTile : SimplePylonTile<ArborPylonItem>
 	{
-		internal override string MapKeyName => "Mods.Arbor.MapObject.ArborPylon";
         protected override Color MapColor => new(25, 130, 168);
 
         public override bool ValidTeleportCheck_BiomeRequirements(TeleportPylonInfo pylonInfo, SceneMetrics sceneData) => ArborTileCount.ArborCount > 40;
@@ -35,7 +34,6 @@ internal abstract class SimplePylonTile<T> : ModPylon where T : ModItem
     public Asset<Texture2D> highlightTexture;
     public Asset<Texture2D> mapIcon;
 
-    internal abstract string MapKeyName { get; }
     protected abstract Color MapColor { get; }
 
     public override void Unload() => crystalTexture = highlightTexture = mapIcon = null;
@@ -89,7 +87,7 @@ internal abstract class SimplePylonTile<T> : ModPylon where T : ModItem
     Color drawColor, float scale, float hoverScale)
     {
         bool mouseOver = DefaultDrawMapIcon(ref context, mapIcon, pylonInfo.PositionInTiles.ToVector2() + new Vector2(1.5f, 2f), drawColor, scale, hoverScale);
-        DefaultMapClickHandle(mouseOver, pylonInfo, MapKeyName, ref mouseOverText);
+        DefaultMapClickHandle(mouseOver, pylonInfo, ModContent.GetInstance<ArborPylonItem>().DisplayName.Key, ref mouseOverText);
     }
 
 }
