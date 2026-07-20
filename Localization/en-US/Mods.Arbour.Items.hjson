@@ -100,7 +100,7 @@ BirchDresserBlock: {
 
 ArborPylonItem: {
 	DisplayName: Arbor Pylon
-	Tooltip: ""
+	Tooltip: "{$CommonItemTooltip.TeleportationPylon}"
 }
 
 Debug: {
@@ -139,6 +139,6 @@ ArborLeafBlock: {
 }
 
 BirchChestBlock: {
-	DisplayName: Birch Chest Block
+	DisplayName: Birch Chest
 	Tooltip: ""
 }

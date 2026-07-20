@@ -22,10 +22,7 @@ Biomes: {
 	}
 }
 
-Projectiles: {
-	MispiritLeaves.DisplayName: Mispirit Leaves
-	FallingMicrobirch.DisplayName: Falling Microbirch
-}
+Projectiles.FallingMicrobirch.DisplayName: Falling Microbirch
 
 MusicDisplay: {
 	ModName: Arbor

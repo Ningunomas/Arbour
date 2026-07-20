@@ -1,6 +1,5 @@
 using Arbour.Content.Items.Placeable.BirchFurniture;
 using Microsoft.Xna.Framework;
-using System;
 using Terraria;
 using Terraria.Audio;
 using Terraria.DataStructures;
@@ -42,13 +41,43 @@ public class BirchDresser : ModTile
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
 
         LocalizedText name = CreateMapEntryName();
-        AddMapEntry(new Color(168, 165, 183), name);
+        AddMapEntry(new Color(168, 165, 183), name, MapChestName);
 
         DustType = DustID.t_BorealWood;
         AdjTiles = new int[] { TileID.Dressers };
     }
 
     public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings) => true;
+
+    public override LocalizedText DefaultContainerName(int frameX, int frameY)
+    {
+        return CreateMapEntryName();
+    }
+
+    public static string MapChestName(string name, int i, int j)
+    {
+        int left = i;
+        int top = j;
+        Tile tile = Main.tile[i, j];
+        if (tile.TileFrameX % 36 != 0)
+        {
+            left--;
+        }
+
+        if (tile.TileFrameY != 0)
+        {
+            top--;
+        }
+
+        int chest = Chest.FindChest(left, top);
+        if (chest < 0)
+            return Language.GetTextValue("LegacyDresserType.0");
+
+        if (Main.chest[chest].name == "")
+            return name;
+
+        return name + ": " + Main.chest[chest].name;
+    }
 
     public override bool RightClick(int i, int j)
     {

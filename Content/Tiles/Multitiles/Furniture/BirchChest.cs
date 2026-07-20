@@ -53,6 +53,11 @@ public class BirchChest : ModTile
     public override ushort GetMapOption(int i, int j) => (ushort)(Main.tile[i, j].TileFrameX / 36);
     public override bool HasSmartInteract(int i, int j, SmartInteractScanSettings settings) => true;
 
+    public override LocalizedText DefaultContainerName(int frameX, int frameY)
+    {
+        return CreateMapEntryName();
+    }
+
     public static string MapChestName(string name, int i, int j)
     {
         int left = i;
