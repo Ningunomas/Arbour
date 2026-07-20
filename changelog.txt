@@ -1,3 +1,5 @@
-﻿1.2.2.6
-- Added Birch Chest
-- Slightly improved Arbor background floating islands
+﻿1.2.2.7
+- Added standard Pylon tooltip to Arbor Pylon
+- Added standard container name to Birch Chest
+- Removed "Block" from Birch Chest item name
+- Added Russian localization (thanks alinahvoshch on the github!)

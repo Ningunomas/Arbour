@@ -14,3 +14,6 @@ YouTube: youtube.com/@gabehaswon
 SoundCloud: soundcloud.com/heltonyan
 Twitter: @heltonyan
 Discord: heltonyan
+
+-- Contributors --
+alinahvoshch (GitHub): Russian localization & fixes
