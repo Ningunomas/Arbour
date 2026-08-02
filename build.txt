@@ -1,6 +1,6 @@
 displayName = Arbour
 author = GabeHasWon, Heltonyan
-version = 1.2.2.8
+version = 1.2.2.9
 hideCode = false
 hideResources = false
 includeSource = true

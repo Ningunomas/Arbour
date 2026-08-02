@@ -1,7 +1,3 @@
-﻿1.2.2.8
-- Increased research count for all of Birch furniture to 3 from 1
-- Increased price of Arbor Pylon from nothing to 10 gold
-- Increased price of Arbor Grass Seeds from nothing to 5 copper
-- Added Birch Sink, Birch Clock
-- Improved Birch Door, Table and Lantern sprites
-- Fixed various furniture tiles not properly dropping their item
+﻿1.2.2.9
+- Added Brazilian Portuguese localization - thanks to Lucluz!
+- Updated Russian localization
