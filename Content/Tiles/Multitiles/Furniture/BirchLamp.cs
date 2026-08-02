@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Arbour.Content.Items.Placeable.BirchFurniture;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
@@ -28,6 +29,7 @@ public class BirchLamp : ModTile
         TileObjectData.addTile(Type);
 
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
+        RegisterItemDrop(ModContent.ItemType<BirchWoodLampBlock>());
         AddMapEntry(new Color(168, 165, 183), Language.GetText("MapObject.FloorLamp"));
     }
 

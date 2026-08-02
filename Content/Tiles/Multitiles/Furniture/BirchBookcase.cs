@@ -3,6 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Terraria;
 using Terraria.ObjectData;
+using Arbour.Content.Items.Placeable.BirchFurniture;
 
 namespace Arbour.Content.Tiles.Multitiles.Furniture;
 
@@ -24,6 +25,7 @@ public class BirchBookcase : ModTile
 
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
         AddMapEntry(new Color(114, 69, 39), Terraria.Localization.Language.GetText("ItemName.Bookcase"));
+        RegisterItemDrop(ModContent.ItemType<BirchBookcaseBlock>());
 
         DustType = DustID.Grass;
         AdjTiles = [TileID.Bookcases];

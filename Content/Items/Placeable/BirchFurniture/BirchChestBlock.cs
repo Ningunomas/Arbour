@@ -5,7 +5,7 @@ namespace Arbour.Content.Items.Placeable.BirchFurniture;
 
 public class BirchChestBlock : ModItem
 {
-    public override void SetStaticDefaults() => Item.ResearchUnlockCount = 1;
+    public override void SetStaticDefaults() => Item.ResearchUnlockCount = 3;
     public override void SetDefaults() => Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.Multitiles.Furniture.BirchChest>());
 
     public override void AddRecipes() => CreateRecipe(1).

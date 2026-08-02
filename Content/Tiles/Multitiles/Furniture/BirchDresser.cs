@@ -39,6 +39,7 @@ public class BirchDresser : ModTile
         TileObjectData.addTile(Type);
 
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
+        RegisterItemDrop(ModContent.ItemType<BirchDresserBlock>());
 
         LocalizedText name = CreateMapEntryName();
         AddMapEntry(new Color(168, 165, 183), name, MapChestName);

@@ -142,3 +142,13 @@ BirchChestBlock: {
 	DisplayName: Берёзовый сундук
 	Tooltip: ""
 }
+
+BirchClockBlock: {
+	// DisplayName: Birch Clock
+	// Tooltip: ""
+}
+
+BirchSinkItem: {
+	// DisplayName: Birch Sink
+	// Tooltip: ""
+}

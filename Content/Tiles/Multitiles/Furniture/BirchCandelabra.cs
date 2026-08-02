@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Arbour.Content.Items.Placeable.BirchFurniture;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
@@ -10,7 +11,12 @@ namespace Arbour.Content.Tiles.Multitiles.Furniture;
 
 internal class BirchCandelabra : ModTile
 {
-    public override void SetStaticDefaults() => CandelabraHelper.Defaults(this, new Color(253, 221, 3));
+    public override void SetStaticDefaults()
+    {
+        CandelabraHelper.Defaults(this, new Color(253, 221, 3));
+        RegisterItemDrop(ModContent.ItemType<BirchCandelabraBlock>());
+    }
+
     public override void HitWire(int i, int j) => CandelabraHelper.WireHit(i, j);
 
     public override void ModifyLight(int i, int j, ref float r, ref float g, ref float b)

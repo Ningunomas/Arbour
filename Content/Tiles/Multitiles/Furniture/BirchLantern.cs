@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Arbour.Content.Items.Placeable.BirchFurniture;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.DataStructures;
@@ -16,10 +17,10 @@ internal class BirchLantern : ModTile
     public override void SetStaticDefaults()
     {
         Main.tileLighted[Type] = true;
-        Main.tileFrameImportant[Type] = true;
         Main.tileNoAttach[Type] = true;
-        Main.tileWaterDeath[Type] = true;
         Main.tileLavaDeath[Type] = true;
+        Main.tileWaterDeath[Type] = true;
+        Main.tileFrameImportant[Type] = true;
 
         TileObjectData.newTile.CopyFrom(TileObjectData.Style1x2);
         TileObjectData.newTile.WaterDeath = true;
@@ -30,6 +31,7 @@ internal class BirchLantern : ModTile
         TileObjectData.addTile(Type);
 
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
+        RegisterItemDrop(ModContent.ItemType<BirchLanternBlock>());
         AddMapEntry(new Color(253, 221, 3), Language.GetText("MapObject.FloorLamp"));
     }
 

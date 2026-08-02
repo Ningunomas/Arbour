@@ -1,10 +1,11 @@
-﻿using Microsoft.Xna.Framework;
-using Terraria.ID;
-using Terraria.ModLoader;
+﻿using Arbour.Content.Dusts;
+using Arbour.Content.Items.Placeable.BirchFurniture;
+using Microsoft.Xna.Framework;
 using Terraria;
-using Terraria.ObjectData;
+using Terraria.ID;
 using Terraria.Localization;
-using Arbour.Content.Dusts;
+using Terraria.ModLoader;
+using Terraria.ObjectData;
 
 namespace Arbour.Content.Tiles.Multitiles.Furniture;
 
@@ -24,6 +25,7 @@ internal class BirchTable : ModTile
 
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
         AddMapEntry(new Color(124, 93, 68), Language.GetText("MapObject.Table"));
+        RegisterItemDrop(ModContent.ItemType<BirchTableBlock>());
 
         TileID.Sets.DisableSmartCursor[Type] = true;
 

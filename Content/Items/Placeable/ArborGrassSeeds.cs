@@ -22,6 +22,7 @@ public class ArborGrassSeeds : ModItem
 		Item.width = 16;
 		Item.height = 18;
 		Item.consumable = true;
+		Item.value = Item.buyPrice(0, 0, 0, 5);
 	}
 
 	public override bool? UseItem(Player player)
@@ -38,6 +39,7 @@ public class ArborGrassSeeds : ModItem
 				return true;
 			}
 		}
+
 		return false;
 	}
 }

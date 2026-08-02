@@ -27,16 +27,14 @@ public class BirchDoorClosed : ModTile
 		TileID.Sets.DisableSmartCursor[Type] = true;
 		TileID.Sets.OpenDoorID[Type] = ModContent.TileType<BirchDoorOpen>();
 
-		AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);
-
-		DustType = ModContent.DustType<Dusts.BirchDust>();
-		AdjTiles = new int[] { TileID.ClosedDoor };
-
-		// Names
 		LocalizedText name = CreateMapEntryName();
-		AddMapEntry(new Color(200, 200, 200), name);
+		AddToArray(ref TileID.Sets.RoomNeeds.CountsAsDoor);
+        AddMapEntry(new Color(200, 200, 200), name);
+        RegisterItemDrop(ModContent.ItemType<BirchDoorBlock>());
 
-		// Placement
+        DustType = ModContent.DustType<Dusts.BirchDust>();
+		AdjTiles = [TileID.ClosedDoor];
+
 		TileObjectData.newTile.Width = 1;
 		TileObjectData.newTile.Height = 3;
 		TileObjectData.newTile.Origin = new Point16(0, 0);

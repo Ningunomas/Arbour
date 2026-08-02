@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Arbour.Content.Items.Placeable.BirchFurniture;
+using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.Enums;
@@ -30,6 +31,7 @@ internal class BirchChandelier : ModTile
 
         AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTorch);
         AddMapEntry(new Color(253, 221, 3), Language.GetText("MapObject.Chandelier"));
+        RegisterItemDrop(ModContent.ItemType<BirchChandelierBlock>());
     }
 
     public override void HitWire(int i, int j)

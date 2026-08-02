@@ -1,3 +1,4 @@
+using Arbour.Content.Items.Placeable.BirchFurniture;
 using Microsoft.Xna.Framework;
 using Terraria;
 using Terraria.ID;
@@ -26,8 +27,9 @@ public class BirchWorkbench : ModTile
 		TileObjectData.addTile(Type);
 
 		AddToArray(ref TileID.Sets.RoomNeeds.CountsAsTable);
+        RegisterItemDrop(ModContent.ItemType<BirchWorkbenchBlock>());
 		AddMapEntry(new Color(229, 208, 222), CreateMapEntryName());
-	}
+    }
 
 	public override void NumDust(int x, int y, bool fail, ref int num) => num = fail ? 1 : 3;
 }

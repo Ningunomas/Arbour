@@ -1,5 +1,7 @@
-﻿1.2.2.7
-- Added standard Pylon tooltip to Arbor Pylon
-- Added standard container name to Birch Chest
-- Removed "Block" from Birch Chest item name
-- Added Russian localization (thanks alinahvoshch on the github!)
+﻿1.2.2.8
+- Increased research count for all of Birch furniture to 3 from 1
+- Increased price of Arbor Pylon from nothing to 10 gold
+- Increased price of Arbor Grass Seeds from nothing to 5 copper
+- Added Birch Sink, Birch Clock
+- Improved Birch Door, Table and Lantern sprites
+- Fixed various furniture tiles not properly dropping their item

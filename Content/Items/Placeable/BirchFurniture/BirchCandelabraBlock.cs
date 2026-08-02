@@ -5,7 +5,7 @@ namespace Arbour.Content.Items.Placeable.BirchFurniture;
 
 public class BirchCandelabraBlock : ModItem
 {
-    public override void SetStaticDefaults() => Item.ResearchUnlockCount = 1;
+    public override void SetStaticDefaults() => Item.ResearchUnlockCount = 3;
     public override void SetDefaults() => Item.DefaultToPlaceableTile(ModContent.TileType<Tiles.Multitiles.Furniture.BirchCandelabra>());
 
     public override void AddRecipes()
