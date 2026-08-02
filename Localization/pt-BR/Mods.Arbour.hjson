@@ -1,7 +1,4 @@
-MapObject: {
-	Microbirch: Microbétula
-	ArborPylon: Pilar do Arbor
-}
+MapObject.Microbirch: Microbétula
 
 Tiles: {
 	MicrobirchSapling.MapEntry: Muda de Microbétula
