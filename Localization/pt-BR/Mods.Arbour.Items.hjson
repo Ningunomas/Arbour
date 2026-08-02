@@ -1,0 +1,154 @@
+ArborGrassSeeds: {
+	DisplayName: Sementes de Grama de Arbor
+	Tooltip: Pode ser colocado na terra
+}
+
+ArborLeafWallBlock: {
+	DisplayName: Parede de Folhas de Arbor
+	Tooltip: "'Cheira a folhas caindo e memórias'"
+}
+
+BirchChairBlock: {
+	DisplayName: Cadeira de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchDoorBlock: {
+	DisplayName: Porta de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchFenceBlock: {
+	DisplayName: Cerca de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchLanternBlock: {
+	DisplayName: Lanterna de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchPlatformBlock: {
+	DisplayName: Plataforma de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchWoodCandleBlock: {
+	DisplayName: Vela de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchWoodLampBlock: {
+	DisplayName: Lâmpada de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchWoodWallBlock: {
+	DisplayName: Parede de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchWorkbenchBlock: {
+	DisplayName: Bancada de Trabalho de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchWoodBlock: {
+	DisplayName: Madeira de Bétula
+	Tooltip: ""
+}
+
+MicrobirchAcorn: {
+	DisplayName: Bolota de Microbétula
+	Tooltip: Pode ser colocada apenas no teto.
+}
+
+FlightlingBannerItem: {
+	DisplayName: Bandeira do Avoadinho
+	Tooltip: ""
+}
+
+BrushToothBannerItem: {
+	DisplayName: Bandeira do Dente de Escova
+	Tooltip: ""
+}
+
+BirchBathtubBlock: {
+	DisplayName: Banheira de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchTableBlock: {
+	DisplayName: Mesa de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchBedBlock: {
+	DisplayName: Cama de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchChandelierBlock: {
+	DisplayName: Lustre de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchDresserBlock: {
+	DisplayName: Cômoda de Madeira de Bétula
+	Tooltip: ""
+}
+
+ArborPylonItem: {
+	DisplayName: Pilar do Arbor
+	Tooltip: ""
+}
+
+Debug: {
+	// DisplayName: Debug
+	// Tooltip: ""
+}
+
+ArborFlowerWallBlock: {
+	DisplayName: Parede de Flores de Arbor
+	Tooltip: ""
+}
+
+StarlitWindsBoxItem: {
+	DisplayName: Caixinha de Música (Starlit Winds)
+	Tooltip: ""
+}
+
+FloatingFallBoxItem: {
+	DisplayName: Caixinha de Música (Floating Fall)
+	Tooltip: ""
+}
+
+BirchBookcaseBlock: {
+	DisplayName: Estante de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchCandelabraBlock: {
+	DisplayName: Candelabro de Madeira de Bétula
+	Tooltip: ""
+}
+
+ArborLeafBlock: {
+	DisplayName: Folha de Arbor
+	Tooltip: ""
+}
+
+BirchChestBlock: {
+	DisplayName: Baú de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchClockBlock: {
+	DisplayName: Rélogio de Madeira de Bétula
+	Tooltip: ""
+}
+
+BirchSinkItem: {
+	DisplayName: Pia de Madeira de Bétula
+	Tooltip: ""
+}
