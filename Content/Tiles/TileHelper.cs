@@ -4,6 +4,7 @@ using System.Linq;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
+using Terraria.Localization;
 using Terraria.ObjectData;
 
 namespace Arbour.Content.Tiles;
@@ -158,7 +159,7 @@ internal class TileHelper
 
     public static void PrintTime(double time, string additionalText = "")
     {
-        string text = "AM";
+        string text = Language.GetTextValue("GameUI.TimeAtMorning");
         if (!Main.dayTime)
             time += 54000.0;
 
@@ -169,12 +170,13 @@ internal class TileHelper
             time += 24.0;
 
         if (time >= 12.0)
-            text = "PM";
+            text = Language.GetTextValue("GameUI.TimePastMorning");
 
         int intTime = (int)time;
         double deltaTime = time - intTime;
         deltaTime = (int)(deltaTime * 60.0);
         string text2 = string.Concat(deltaTime);
+        string displayText;
 
         if (deltaTime < 10.0)
             text2 = "0" + text2;
@@ -183,7 +185,9 @@ internal class TileHelper
         if (intTime == 0)
             intTime = 12;
 
-        var newText = string.Concat("Time: ", intTime, ":", text2, " ", text);
+        displayText = $"{intTime}:{text2} {text}";
+
+        var newText = string.Concat(Language.GetTextValue("CLI.Time", displayText));
         Main.NewText(newText + additionalText, 255, 240, 20);
     }
 }
