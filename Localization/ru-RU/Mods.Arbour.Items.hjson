@@ -144,11 +144,11 @@ BirchChestBlock: {
 }
 
 BirchClockBlock: {
-	// DisplayName: Birch Clock
-	// Tooltip: ""
+	DisplayName: Берёзовые напольные часы
+	Tooltip: ""
 }
 
 BirchSinkItem: {
-	// DisplayName: Birch Sink
-	// Tooltip: ""
+	DisplayName: Берёзовая раковина
+	Tooltip: ""
 }
