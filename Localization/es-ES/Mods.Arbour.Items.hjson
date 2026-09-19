@@ -1,0 +1,154 @@
+ArborGrassSeeds: {
+	DisplayName: Semillas de Césped de la Arboleda
+	Tooltip: Se pueden colocar sobre tierra
+}
+
+ArborLeafWallBlock: {
+	DisplayName: Pared de Hojas de la Arboleda
+	Tooltip: "'Huele a hojas cayendo y recuerdos'"
+}
+
+BirchChairBlock: {
+	DisplayName: Silla de Abedul
+	Tooltip: ""
+}
+
+BirchDoorBlock: {
+	DisplayName: Puerta de Abedul
+	Tooltip: ""
+}
+
+BirchFenceBlock: {
+	DisplayName: Valla de Abedul
+	Tooltip: ""
+}
+
+BirchLanternBlock: {
+	DisplayName: Linterna de Abedul
+	Tooltip: ""
+}
+
+BirchPlatformBlock: {
+	DisplayName: Plataforma de Abedul
+	Tooltip: ""
+}
+
+BirchWoodCandleBlock: {
+	DisplayName: Vela de Abedul
+	Tooltip: ""
+}
+
+BirchWoodLampBlock: {
+	DisplayName: Lámpara de Abedul
+	Tooltip: ""
+}
+
+BirchWoodWallBlock: {
+	DisplayName: Pared de Abedul
+	Tooltip: ""
+}
+
+BirchWorkbenchBlock: {
+	DisplayName: Banco de Trabajo de Abedul
+	Tooltip: ""
+}
+
+BirchWoodBlock: {
+	DisplayName: Madera de Abedul
+	Tooltip: ""
+}
+
+MicrobirchAcorn: {
+	DisplayName: Bellota de Microabedul
+	Tooltip: Solo se puede colocar en techos
+}
+
+FlightlingBannerItem: {
+	DisplayName: Estandarte de Voladorcito
+	Tooltip: ""
+}
+
+BrushToothBannerItem: {
+	DisplayName: Estandarte de Diente de Maleza
+	Tooltip: ""
+}
+
+BirchBathtubBlock: {
+	DisplayName: Bañera de Abedul
+	Tooltip: ""
+}
+
+BirchTableBlock: {
+	DisplayName: Mesa de Abedul
+	Tooltip: ""
+}
+
+BirchBedBlock: {
+	DisplayName: Cama de Abedul
+	Tooltip: ""
+}
+
+BirchChandelierBlock: {
+	DisplayName: Candelabro de Abedul
+	Tooltip: ""
+}
+
+BirchDresserBlock: {
+	DisplayName: Aparador de Abedul
+	Tooltip: ""
+}
+
+ArborPylonItem: {
+	DisplayName: Torre de la Arboleda
+	Tooltip: "{$CommonItemTooltip.TeleportationPylon}"
+}
+
+Debug: {
+	DisplayName: Depuración
+	Tooltip: ""
+}
+
+ArborFlowerWallBlock: {
+	DisplayName: Pared de Flores de la Arboleda
+	Tooltip: ""
+}
+
+StarlitWindsBoxItem: {
+	DisplayName: Caja de Música (Starlit Winds)
+	Tooltip: ""
+}
+
+FloatingFallBoxItem: {
+	DisplayName: Caja de Música (Floating Fall)
+	Tooltip: ""
+}
+
+BirchBookcaseBlock: {
+	DisplayName: Librería de Abedul
+	Tooltip: ""
+}
+
+BirchCandelabraBlock: {
+	DisplayName: Candelabro de Abedul
+	Tooltip: ""
+}
+
+ArborLeafBlock: {
+	DisplayName: Hoja de la Arboleda
+	Tooltip: ""
+}
+
+BirchChestBlock: {
+	DisplayName: Cofre de Abedul
+	Tooltip: ""
+}
+
+BirchClockBlock: {
+	DisplayName: Reloj de Abedul
+	Tooltip: ""
+}
+
+BirchSinkItem: {
+	DisplayName: Fregadero de Abedul
+	Tooltip: ""
+}

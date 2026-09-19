@@ -1,0 +1,63 @@
+MapObject.Microbirch: Microabedul
+
+Tiles: {
+	MicrobirchSapling.MapEntry: Retoño de Microabedul
+	Microbirch.MapEntry: Microabedul
+	BirchWorkbench.MapEntry: Banco de Trabajo de Abedul
+	BirchDoorOpen.MapEntry: Puerta de Abedul
+	BirchDoorClosed.MapEntry: Puerta de Abedul
+	BirchCandle.MapEntry: Vela de Abedul
+	ArborSapling.MapEntry: Retoño
+	BirchDresser.MapEntry: Aparador de Abedul
+	ArborPylonTile.MapEntry: Torre de la Arboleda
+	StarlitWindsBox.MapEntry: Caja de Música (Starlit Winds)
+	FloatingFallBox.MapEntry: Caja de Música (Floating Fall)
+	BirchChest.MapEntry: Cofre de Abedul
+}
+
+Biomes: {
+	ArborBiome: {
+		TownNPCDialogueName: la Arboleda
+		DisplayName: Arboleda
+	}
+}
+
+Projectiles.FallingMicrobirch.DisplayName: Microabedul Cayendo
+
+MusicDisplay: {
+	ModName: Arboleda
+
+	DayOld: {
+		DisplayName: Floating Fall (Old Arbor Theme)
+		Author: by Heltonyan
+	}
+
+	Day: {
+		DisplayName: Starlit Winds (Arbor Theme)
+		Author: by GabeHasWon
+	}
+}
+
+Configs: {
+	ArborConfig: {
+		DisplayName: Configuración de Arbor
+
+		NewMusic: {
+			Label: Nueva Música
+			Tooltip: Si es falso, se usa la canción antigua e inacabada de Heltonyan. Por defecto es verdadero.
+		}
+
+		NoMusic: {
+			Label: Sin Música
+			Tooltip: Desactiva por completo la música personalizada de Arbor.
+		}
+	}
+}
+
+InBiome: En la Arboleda
+
+MicrobirchKill: {
+	0: "{0} cortó un árbol justo encima de su cabeza."
+	1: "{0} descubrió la gravedad... otra vez."
+	2: Un árbol cayó sobre la cabeza de {0}.
+}
