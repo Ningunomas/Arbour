@@ -152,3 +152,8 @@ BirchSinkItem: {
 	DisplayName: Fregadero de Abedul
 	Tooltip: ""
 }
+
+BirchSofaItem: {
+	// DisplayName: Birch Sofa Item
+	// Tooltip: ""
+}

@@ -62,15 +62,15 @@ namespace Arbour.Content.Tiles
 			return new Vector2(tileWidth / 2, 16 - halfBrickHeight - tileTop);
 		}
 
-		internal static void DrawTreeSway(int i, int j, Texture2D tex, Rectangle? source, Vector2? offset = null, Vector2? origin = null, bool noPositionMod = false, float rotationMod = 1f)
+		internal static void DrawTreeSway(int i, int j, Texture2D tex, Rectangle? source, Vector2? offset = null, Vector2? origin = null, bool noPositionMod = false, float rotationMod = 1f, bool skipTileOffset = false)
         {
-			Vector2 drawPos = TileHelper.TileCustomPosition(i, j) + (offset ?? Vector2.Zero);
+			Vector2 drawPos = (skipTileOffset ? new Vector2(i, j) * 16 - Main.screenPosition : TileHelper.TileCustomPosition(i, j)) + (offset ?? Vector2.Zero);
 
 			Vector2 drawOffset = default;
 			float rot = ModContent.GetInstance<TileSwaySystem>().GetTreeSway(i, j, ref noPositionMod ? ref drawOffset : ref drawPos) * rotationMod;
 			Color col = Lighting.GetColor(i, j);
 
-			if (Main.tile[i, j].TileColor == 31)
+			if (Main.tile[i, j].TileColor == PaintID.IlluminantPaint)
 				col = Color.White;
 
 			Main.spriteBatch.Draw(tex, drawPos, source, col, rot * 0.08f, origin ?? source.Value.Size() / 2f, 1f, SpriteEffects.None, 0f);

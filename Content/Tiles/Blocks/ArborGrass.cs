@@ -24,6 +24,12 @@ public class ArborGrass : ModTile
         DustType = ModContent.DustType<Dusts.LeafDust>();
     }
 
+    public override bool CanExplode(int i, int j)
+	{
+		WorldGen.KillTile(i, j);
+		return true;
+	}
+
     public override void KillTile(int i, int j, ref bool fail, ref bool effectOnly, ref bool noItem)
 	{
 		if (!fail) //Change self into dirt
@@ -43,8 +49,6 @@ public class ArborGrass : ModTile
 
 			if (Main.rand.NextBool(220))
                 success = WorldGen.PlaceTile(i, j + 1, ModContent.TileType<MicrobirchSapling>(), true);
-			else if (Main.rand.NextBool(10))
-                success = WorldGen.PlaceTile(i, j + 1, ModContent.TileType<ArborVines>(), true);
 
 			if (success)
                 NetMessage.SendTileSquare(-1, i, j + 1, 1, TileChangeType.None);

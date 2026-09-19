@@ -152,3 +152,8 @@ BirchSinkItem: {
 	DisplayName: Pia de Madeira de Bétula
 	Tooltip: ""
 }
+
+BirchSofaItem: {
+	// DisplayName: Birch Sofa Item
+	// Tooltip: ""
+}

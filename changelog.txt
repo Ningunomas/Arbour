@@ -1,3 +1,13 @@
-﻿1.2.2.9
-- Added Brazilian Portuguese localization - thanks to Lucluz!
-- Updated Russian localization
+﻿1.2.2.10
+- Added Spanish localization - thanks to Ningunomas!
+- Added Birch Sofa
+- Arbor Grass now, when exploded, is destroyed entirely instead of breaking into dirt
+- Substantially improved the way vines work in the Arbor:
+	They now sway in wind, like all vanilla vines do - this may cause some silly visual issues with your existing world's vines, whoops!
+	They now only grow to a cap
+	They now inherit the paint of the tile they grew off of
+	They now drop (normal, vanilla) Vine Rope when the Guide to Plant Fiber Cordage is used - I'll probably add a new tile eventually, but don't want to atm
+	Added some safety checks for when they or other vines are broken
+	Added 9 new frame variants for variety and interest - 3 new 'standard' ones, and 6 new 'flower' ones
+- Made Microbirch trees draw either on top of or under the 'trunks' for more variety
+- Added additional Microbirch variants

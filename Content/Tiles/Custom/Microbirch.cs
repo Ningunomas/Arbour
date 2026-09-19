@@ -3,6 +3,8 @@ using Arbour.Content.Projectiles.Info;
 using Arbour.Content.Tiles.Blocks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using rail;
+using ReLogic.Content;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
@@ -16,12 +18,14 @@ internal class Microbirch : ModTile
 {
     public static HashSet<int> ValidAnchors = [];
 
+    private static Asset<Texture2D> MicrobirchBottom = null;
     private static bool KillingMicrobirch = false;
 
     const int TreeBottomFrame = 3 * 18;
 
     public override void SetStaticDefaults()
     {
+        MicrobirchBottom = Mod.Assets.Request<Texture2D>("Content/Tiles/Custom/MicrobirchBottom");
         ValidAnchors = [ModContent.TileType<ArborGrass>(), ModContent.TileType<ArborLeaf>()];
 
         DustType = DustID.Pumpkin;
@@ -138,17 +142,34 @@ internal class Microbirch : ModTile
     public override bool TileFrame(int i, int j, ref bool resetFrame, ref bool noBreak) => false;
     public override void NumDust(int i, int j, bool fail, ref int num) => num = 0;
 
+    public override void DrawEffects(int i, int j, SpriteBatch spriteBatch, ref TileDrawInfo drawData)
+    {
+        int frameNum = GetFrameNum(i, j);
+        Tile tile = Main.tile[i, j];
+
+        if (tile.TileFrameX == TreeBottomFrame && frameNum % 3 == 0)
+            Main.instance.TilesRenderer.AddSpecialPoint(i, j, Terraria.GameContent.Drawing.TileDrawing.TileCounterType.CustomNonSolid);
+    }
+
+    private static int GetFrameNum(int i, int j) => i + j + i % 3 + j % 7;
+
     public override bool PreDraw(int i, int j, SpriteBatch spriteBatch)
     {
         Tile tile = Main.tile[i, j];
+        int frameNum = GetFrameNum(i, j);
 
-        if (tile.TileFrameX == TreeBottomFrame)
-        {
-            Texture2D tex = Mod.Assets.Request<Texture2D>("Content/Tiles/Custom/MicrobirchBottom").Value;
-            TileSwaySystem.DrawTreeSway(i, j, tex, new Rectangle(Main.tile[i, j - 1].TileFrameX / 18 * 50, 0, 48, 42), new Vector2(6, 0), new Vector2(24, 0), true, -1);
-            return false;
-        }
+        if (tile.TileFrameX == TreeBottomFrame && frameNum % 3 != 0)
+            return DrawBirchBottom(i, j, frameNum, false);
 
         return true;
+    }
+
+    public override void SpecialDraw(int i, int j, SpriteBatch spriteBatch) => DrawBirchBottom(i, j, GetFrameNum(i, j), true);
+
+    private bool DrawBirchBottom(int i, int j, int frameNum, bool skipOffset)
+    {
+        Texture2D tex = MicrobirchBottom.Value;
+        TileSwaySystem.DrawTreeSway(i, j, tex, new Rectangle(frameNum % 5 * 50, 0, 48, 42), new Vector2(6, 0), new Vector2(24, 0), true, -1, skipOffset);
+        return false;
     }
 }
