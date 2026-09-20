@@ -1,0 +1,21 @@
+Este mod añade el minibioma Arboleda, que se encuentra como un nuevo tipo de isla flotante en el cielo.
+¡Fue creado como propuesta para un Modjam! Los Modjams son muy divertidos y ojalá hubiera más.
+
+¡Gracias por jugar!
+Puedes informar de cualquier problema o hablar sobre el mod aquí: https://discord.gg/FAnwxtM2vc
+Y, si puedes, apóyame en Patreon: https://www.patreon.com/gabehaswon
+
+-- Desarrolladores --
+- GabeHasWon: Código, Arte, Música -
+Twitter: @GabeHasWon
+YouTube: youtube.com/@gabehaswon
+
+- Heltonyan: Música -
+SoundCloud: soundcloud.com/heltonyan
+Twitter: @heltonyan
+Discord: heltonyan
+
+-- Colaboradores --
+alinahvoshch (GitHub): Traducción al ruso y correcciones
+Lucluz (GitHub): Traducción al portugués
+Ningunomas (GitHub): Traducción al español
