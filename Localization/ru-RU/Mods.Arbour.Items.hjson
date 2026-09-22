@@ -154,6 +154,6 @@ BirchSinkItem: {
 }
 
 BirchSofaItem: {
-	// DisplayName: Birch Sofa Item
-	// Tooltip: ""
+	DisplayName: Берёзовый диван
+	Tooltip: ""
 }
